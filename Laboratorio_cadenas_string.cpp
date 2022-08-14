@@ -36,7 +36,20 @@ for (int i = 0; i < cad.length(); i++){
 
 
 void alfanumerico(string &cade){
+int a=0, b=0;
+for (int i = 0; i < cade.size(); i++){
+    if (!isdigit(cade[i])){
+    cout<<"Alfabetico: "<<cade[i]<<"\n";
+    a++;
+    }
+    else{
+    cout<<"numerico: "<<cade[i]<<"\n";
+    b++;
+    }
+}
 
+cout<<"Hay "<<a<<" caracteres alfabeticos \n";
+cout<<"Hay "<<b<<" caracteres numericos \n";
 
 }
 
