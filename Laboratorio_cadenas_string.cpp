@@ -60,5 +60,40 @@ cout<<"Ingrese una cadena: ";
 getline (cin,caden);
 cout<<"La cadena ingresada es: "<<caden<<"\n";
 
+for (int i = 0; i < caden.size(); i++){
+    if (!isdigit(caden[i])){
+    a++;
+    if (a==caden.size()){
+          c=1;
+          }
+          else{
+          c=3;
+          }
+    }
+    else{
+         b++;
+            if (b==caden.size()){
+            c=2;
+            }
+            else{
+            c=3;
+            }
+    }
+}
+
+if (c==1){
+    cout<<"la cadena es tipo alfabetico \n";
+    alfabeticosstring(caden);
+}
+else if (c==2){
+    cout<<"la cadena es tipo numerico \n";
+   numericosstring(caden);
+}
+else{
+    cout<<"la cadena es tipo alfanumerico \n";
+    alfanumerico(caden);
+}
+
+
 
 }
